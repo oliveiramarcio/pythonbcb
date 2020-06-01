@@ -10,7 +10,7 @@ df_list = pandas.read_html(conteudo_pagina['conteudo'], decimal=',', thousands='
 df = df_list[9]
 df.head()
 
-print('\n*** Taxas de Mercado para Financiamento Imobiliário ***')
+print('\n*** Taxas de Mercado para Financiamento Imobiliário ***\nURL = ' + url)
 for i in range(2, len(df)):
     print(df.iloc[i][0], df.iloc[i][1], df.iloc[i][2], df.iloc[i][3])
 
@@ -23,6 +23,6 @@ df_list = pandas.read_html(conteudo_pagina['conteudo'], decimal=',', thousands='
 df = df_list[10]
 df.head()
 
-print('\n*** Taxa de Juros para Cheque Especial ***')
+print('\n*** Taxa de Juros para Cheque Especial ***\nURL = ' + url)
 for i in range(2, len(df)):
     print(df.iloc[i][0], df.iloc[i][1], df.iloc[i][2], df.iloc[i][3])
